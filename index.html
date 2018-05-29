@@ -12,19 +12,23 @@
     <h1>Bienvenido al Restaurant</h1>
     <h2>Estabamos esperando que te diera hambre así que estamos muy felices de recibirte.</h2>
 
-    <p>¿Quieres pedir?</p>
-    <input id='intervalo' type="text">
+    <form>
+        Seleccciona lo que deseas pedir:
 
-    <span id="pedir_si"></span>
+        <select id="menu">
+            <option value="Tu plato estará listo en 30 minutos">Ceviche</option>
+            <option value="En 15 minutos tu plato estara lista">Tacos</option>
+            <option value="No tenemos en estos momentos pero hay mas opciones para elegir">Empanadas Chilenas</option>
+            <option value="Nos encantan las hamburguesas,pero se nos acabaron">Hamburguesas</option>
+        </select>
+    </form>
 
-<!--
-<p id="demo"></p>
-    <p>¿Qué quieres pedir</p>
-         <span id="Ceviche"></span></td>
-         <span id="Lo sentimos no tenemos en stock"></span></td>
-        -->
-        <script src ="/assets/app.js">b </script>
+    <p>Haz Click en el boton para ver el estado de tu pedido.</p>
 
+    <button type="button" onclick="myFunction()">ver</button>
+    <p id="demo"></p>
+
+    <script src="/assets/app.js "></script>
 </body>
 
 </html>
